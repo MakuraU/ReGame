@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneManagerOnPlayer : MonoBehaviour
 {
     private GameObject player;
+    private int SceneNum = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +27,51 @@ public class SceneManagerOnPlayer : MonoBehaviour
     {
         if (other.gameObject.tag == "ToTown1")
         {
-            Invoke("ChangeScene", 1.5f);
+            SceneNum = 1;
+            Invoke("ChangeScene", 0.5f);
+        }
+        if (other.gameObject.tag == "ToTown2")
+        {
+            SceneNum = 2;
+            Invoke("ChangeScene", 0.5f);
+        }
+        if (other.gameObject.tag == "ToDungeon")
+        {
+            SceneNum = 3;
+            Invoke("ChangeScene", 0.5f);
+        }
+        if (other.gameObject.tag == "ToKasino")
+        {
+            SceneNum = 4;
+            Invoke("ChangeScene", 0.5f);
+        }
+        if (other.gameObject.tag == "GoHome")
+        {
+            SceneNum = 0;
+            Invoke("ChangeScene", 0.5f);
         }
     }
 
-    void ChangeScene()
+        void ChangeScene()
     {
-        SceneManager.LoadScene("Town_1");
+        if (SceneNum == 0)
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+        if (SceneNum == 1)
+        {
+            SceneManager.LoadScene("Town_1");
+        } if (SceneNum == 2)
+        {
+            SceneManager.LoadScene("Town_2");
+        }
+        if (SceneNum == 3)
+        {
+            SceneManager.LoadScene("Dungeon");
+        }if (SceneNum == 4)
+        {
+            SceneManager.LoadScene("Kasino");
+        }
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)

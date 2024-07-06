@@ -13,6 +13,9 @@ TagManager:
   - House
   - ToTown1
   - ToTown2
+  - GoHome
+  - ToDungeon
+  - ToKasino
   layers:
   - Default
   - TransparentFX

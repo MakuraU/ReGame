@@ -6,27 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Title.unity
+    path: Assets/MyScenes/Title.unity
     guid: e106171a454f3b644b166814800eee7a
   - enabled: 1
-    path: Assets/Scenes/StartScene.unity
+    path: Assets/MyScenes/StartScene.unity
     guid: a27c0defdfb343242b696abdf95f8492
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/MyScenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Room.unity
+    path: Assets/MyScenes/Room.unity
     guid: bce4c784e30122140aa354450aca6a18
   - enabled: 1
-    path: Assets/Scenes/Town_1.unity
+    path: Assets/MyScenes/Town_1.unity
     guid: 74baa0424f215c54492fc78db2d00e06
   - enabled: 1
-    path: Assets/Scenes/Town_2.unity
+    path: Assets/MyScenes/Town_2.unity
     guid: ae0faf1e6546b214db5a6353a4299442
   - enabled: 1
-    path: Assets/Scenes/Dungeon.unity
+    path: Assets/MyScenes/Dungeon.unity
     guid: 4fa9a4b222aef26459f4f1bf9e5ab87e
   - enabled: 1
-    path: Assets/Scenes/Kasino.unity
+    path: Assets/MyScenes/Kasino.unity
     guid: 471481370fd52c94b8e3aef7bcedbaa2
   m_configObjects: {}

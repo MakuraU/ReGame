@@ -16,6 +16,7 @@ TagManager:
   - GoHome
   - ToDungeon
   - ToKasino
+  - KasinoTable
   layers:
   - Default
   - TransparentFX

@@ -17,6 +17,9 @@ TagManager:
   - ToDungeon
   - ToKasino
   - KasinoTable
+  - DiceGameTable
+  - DiceTable
+  - Sword
   layers:
   - Default
   - TransparentFX

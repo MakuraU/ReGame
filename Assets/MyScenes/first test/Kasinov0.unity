@@ -4041,6 +4041,7 @@ MonoBehaviour:
   DiceGameTable: {fileID: 5029355948726470745, guid: 49a0c2dee13f4d04e9d9a00927c275df, type: 3}
   Roulatte: {fileID: 9193289776409955721, guid: d09792e29b081d9409b1e26f949d90ec, type: 3}
   MiniGameCamera: {fileID: 1028535869}
+  DiceEnd: 0
 --- !u!1001 &98271934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23567,21 +23568,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 96747058}
         m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
-        m_MethodName: DiceGameSet
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 393641972}
-        m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
-        m_MethodName: Finish_Conversation
+        m_MethodName: DiceGameO
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23593,7 +23580,45 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 96747058}
         m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
-        m_MethodName: DiceGameO
+        m_MethodName: DiceGameSet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 292732786}
+        m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
+        m_MethodName: Finish_Conversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 96747058}
+        m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
+        m_MethodName: DiceGameDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 292732786}
+        m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
+        m_MethodName: Finish_Conversation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30292,21 +30317,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 96747058}
         m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
-        m_MethodName: DiceGameSet
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 393641972}
-        m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
-        m_MethodName: Finish_Conversation
+        m_MethodName: DiceGameO
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30318,7 +30329,45 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 96747058}
         m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
-        m_MethodName: DiceGameO
+        m_MethodName: DiceGameSet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 821213188}
+        m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
+        m_MethodName: Finish_Conversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 96747058}
+        m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
+        m_MethodName: DiceGameDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 821213188}
+        m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
+        m_MethodName: Finish_Conversation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36078,7 +36127,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 96747058}
         m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
-        m_MethodName: DiceGameO
+        m_MethodName: DiceGameDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41543,6 +41592,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 96747058}
         m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
+        m_MethodName: DiceGameO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 96747058}
+        m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
         m_MethodName: DiceGameSet
         m_Mode: 1
         m_Arguments:
@@ -41553,8 +41614,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  - m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 393641972}
         m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
         m_MethodName: Finish_Conversation
@@ -41567,9 +41626,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 96747058}
         m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
-        m_MethodName: DiceGameO
+        m_MethodName: DiceGameDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 393641972}
+        m_TargetAssemblyTypeName: VNEngine.ConversationManager, Assembly-CSharp
+        m_MethodName: Finish_Conversation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

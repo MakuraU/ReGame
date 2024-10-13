@@ -5,13 +5,13 @@ using UnityEngine;
 public class DiceManager : MonoBehaviour
 {
     public GameObject dice;
-   static  public bool DiceStart;
+   public bool DiceStart;
     private int rotateX;
     private int rotateY;
     private int rotateZ;
     public GameObject Hat1;
     public GameObject Hat2;
-
+  public bool Goal;
     void Start()
     {
         DiceStart = false;
@@ -33,6 +33,18 @@ public class DiceManager : MonoBehaviour
         
         }
         }
+    }
+    public void Goaljiesuan()
+    {
+        Goal = true;
+    }
+    public void hatDes()
+    {
+
+        Hat1.SetActive(false);
+        Hat2.SetActive(false);
+        DiceStart = false;
+        Invoke("Goaljiesuan", 2f);
     }
     public void DicegameStart()
     {

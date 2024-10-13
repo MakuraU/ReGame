@@ -109,7 +109,6 @@ GameObject:
   - component: {fileID: 5029355948333460276}
   - component: {fileID: 5029355948333460277}
   - component: {fileID: 5029355948333460278}
-  - component: {fileID: 5029355948333460279}
   m_Layer: 0
   m_Name: Play
   m_TagString: Untagged
@@ -256,20 +255,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5029355948333460279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5029355948333460273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 733f10a47b9e8664bb11e02fe62eaedc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hat1: {fileID: 0}
-  Hat2: {fileID: 0}
 --- !u!1 &5029355948429898892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,8 +1148,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: {fileID: 5029355948709110408}
+  DiceStart: 0
   Hat1: {fileID: 4192105454098484968}
   Hat2: {fileID: 6491161448661702174}
+  Goal: 0
 --- !u!1 &5029355948714811803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1296,7 @@ GameObject:
   - component: {fileID: 5029355948726470744}
   m_Layer: 0
   m_Name: DiceGame
-  m_TagString: Untagged
+  m_TagString: DiceTable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1613,6 +1600,10 @@ MonoBehaviour:
   NumTextP: {fileID: 5029355949672660550}
   NumTextE: {fileID: 5029355949101033058}
   WinAndLose: {fileID: 5029355948733826627}
+  WinDiceAgain: {fileID: 0}
+  LoseDiceAgain: {fileID: 0}
+  pingDiceAgain: {fileID: 0}
+  DiceM: {fileID: 5029355949661398745}
 --- !u!1 &5029355948868013846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,7 +2120,6 @@ GameObject:
   - component: {fileID: 5029355949283154519}
   - component: {fileID: 5029355949283154512}
   - component: {fileID: 5029355949283154513}
-  - component: {fileID: 5029355949283154518}
   m_Layer: 0
   m_Name: open
   m_TagString: Untagged
@@ -2240,8 +2230,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5029355949283154518}
-        m_TargetAssemblyTypeName: hat, Assembly-CSharp
+      - m_Target: {fileID: 5029355949661398749}
+        m_TargetAssemblyTypeName: DiceManager, Assembly-CSharp
         m_MethodName: hatDes
         m_Mode: 1
         m_Arguments:
@@ -2252,20 +2242,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5029355949283154518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5029355949283154515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 733f10a47b9e8664bb11e02fe62eaedc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hat1: {fileID: 4192105454098484968}
-  Hat2: {fileID: 6491161448661702174}
 --- !u!1 &5029355949384994135
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,3 +3492,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2217932100888702265, guid: 94e4c4d8afe4ef6458b01e26a21f1947, type: 3}
   m_PrefabInstance: {fileID: 6560743999726455777}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5029355949661398745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217932100888702264, guid: 94e4c4d8afe4ef6458b01e26a21f1947, type: 3}
+  m_PrefabInstance: {fileID: 6560743999726455777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5029355949661398749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2217932100888702268, guid: 94e4c4d8afe4ef6458b01e26a21f1947, type: 3}
+  m_PrefabInstance: {fileID: 6560743999726455777}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029355949661398745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff20f4e245d2bc4ca68a024c0b0ceaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

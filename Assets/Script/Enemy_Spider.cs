@@ -20,7 +20,7 @@ public class Enemy_Spider : MonoBehaviour
         {
             if (this.gameObject.tag == "Enemy")
             {
-                ShopManager.Gill += 100;
+                GillManager.Gill += 100;
             }if (this.gameObject.name == "Black Widow")
             {
                 CreatManager.Wood += 10;

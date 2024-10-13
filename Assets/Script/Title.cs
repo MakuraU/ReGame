@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour
 {
@@ -12,17 +12,19 @@ public class Title : MonoBehaviour
     static public bool Named =false;
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
     void Update()
     {
+
+      
         if (Named == true)
         {
             // 経過時間を更新
             TimeToName += Time.deltaTime;
-            Debug.Log(TimeToName);
+            //Debug.Log(TimeToName);
         }
     }
     public void StartButton()
@@ -33,6 +35,13 @@ public class Title : MonoBehaviour
         GameObject.Find("InputField").GetComponent<InputField>().text="工科太郎";
         Named = true;
     
+    }
+    public void NamedToStart()
+    {
+
+        SceneManager.LoadScene("StartScenev0");
+
+
     }
 
 }

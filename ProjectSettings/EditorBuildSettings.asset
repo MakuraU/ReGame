@@ -29,4 +29,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyScenes/Kasino.unity
     guid: 471481370fd52c94b8e3aef7bcedbaa2
+  - enabled: 1
+    path: Assets/MyScenes/first test/Kasinov0.unity
+    guid: 5faae40a597579947b8c5e9d6a5cd2f4
+  - enabled: 1
+    path: Assets/MyScenes/first test/SampleScenev0.unity
+    guid: 289715ccd25c5774aa59728d36fca615
+  - enabled: 1
+    path: Assets/MyScenes/first test/StartScenev0.unity
+    guid: 85fe2ad4137459f4c83cecedc696c52c
+  - enabled: 1
+    path: Assets/MyScenes/first test/Titlev0.unity
+    guid: a3196adda0bbc174ea5ba0bb5f9e7273
+  - enabled: 1
+    path: Assets/MyScenes/first test/Town_2v0.unity
+    guid: 458858a03e063054e89dfe74ea060bd4
   m_configObjects: {}

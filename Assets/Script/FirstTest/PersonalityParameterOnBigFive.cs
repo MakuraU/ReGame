@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class PersonalityParameterOnBigFive : MonoBehaviour
 {
-    //Extraversion:Excitement-seeking,Activity-Level,
+    static public float Extraversion;
+    static public float ExcitementSeeking;
+    static public float ActivityLevel;
+    static public float Cheerfulness;
+    static public float Gregariousness;
+    static public float Agreeableness;
+    static public float Altruism;
+    static public float Cooperation;
+    static public float ModestyHumility;
+    static public float Morality;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         

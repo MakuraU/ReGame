@@ -5,7 +5,8 @@ public class PlayerMove : MonoBehaviour
     public Animator animator;
     public float moveSpeed = 3.0f; 
     private CharacterController controller; 
-    private Vector3 moveDirection = Vector3.zero; 
+    private Vector3 moveDirection = Vector3.zero;
+    public GameObject SwordOnPlayer;
 
     void Start()
     {
@@ -50,6 +51,14 @@ public class PlayerMove : MonoBehaviour
         if (moveDirection != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(moveDirection);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Sword")
+        {
+            SwordOnPlayer.SetActive(true);
+            Destroy(other.gameObject, 0.1f);
         }
     }
 }

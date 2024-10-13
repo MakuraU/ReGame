@@ -1175,9 +1175,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1152725816}
-  - component: {fileID: 1152725815}
   - component: {fileID: 1152725817}
   - component: {fileID: 1152725818}
+  - component: {fileID: 1152725819}
   m_Layer: 0
   m_Name: PersonalityController
   m_TagString: Untagged
@@ -1185,19 +1185,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1152725815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152725814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2126acafa4de087498bd7516a48eaa86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PersonalityText: {fileID: 1785733508}
 --- !u!4 &1152725816
 Transform:
   m_ObjectHideFlags: 0
@@ -1242,6 +1229,18 @@ MonoBehaviour:
   PlayerName: 
   GameEndTime: 0
   Ending: 0
+--- !u!114 &1152725819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152725814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9167efd65195849478513d5186cb2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1174236399
 GameObject:
   m_ObjectHideFlags: 0

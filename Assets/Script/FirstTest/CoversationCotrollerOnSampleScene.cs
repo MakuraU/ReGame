@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using VNEngine;  // ÒıÈëVN EngineµÄÃüÃû¿Õ¼ä
+using VNEngine;  // ÒıÈEN EngineµÄÃEû¿Õ¼E
 
 public class CoversationCotrollerOnSampleScene : MonoBehaviour
 {
     private bool isPlayerInRange = false;
     private string NpcName;
 
-    public GameObject npc1ConversationObject; // °üº¬ ConversationManager µÄ GameObject
-                                              // ¼ì²âÍæ¼Ò½øÈë½»»¥·¶Î§
+    public GameObject npc1ConversationObject; // °E¬ ConversationManager µÄ GameObject
+                                              // ¼EâÍæ¼Ò½øÈE»»¥·¶Î§
     public GameObject shirube1ConversationObject;
     public GameObject shirube2ConversationObject;
 
@@ -18,28 +18,28 @@ public class CoversationCotrollerOnSampleScene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
-            Debug.Log("Íæ¼Ò½øÈë·¶Î§£¬¿ÉÒÔ°´¼ü½»»¥");
+            Debug.Log("Íæ¼Ò½øÈE¶Î§£¬¿ÉÒÔ°´¼E»»¥");
         }
     }
 
-    // ¼ì²âÍæ¼ÒÀë¿ª½»»¥·¶Î§
+    // ¼EâÍæ¼ÒÀEª½»»¥·¶Î§
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
-            Debug.Log("Íæ¼ÒÀë¿ª·¶Î§£¬ÎŞ·¨½»»¥");
+            Debug.Log("Íæ¼ÒÀEª·¶Î§£¬ÎŞ·¨½»»¥");
         }
     }
 
-    // ÔÚUpdateÖĞ¼ì²â°´¼ü°´ÏÂ
+    // ÔÚUpdateÖĞ¼Eâ°´¼E´ÏÂ
     void Update()
     {
         NpcName = this.gameObject.name;
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             TriggerDialogue();
-            Debug.Log("°´ÏÂ°´¼ü");
+      
         }
     }
 
